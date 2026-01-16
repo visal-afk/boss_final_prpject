@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace boss.Exceptions;
 
-namespace boss.Exceptions
+public class IdCheckException:Exception
 {
-    internal class IdCheckException
+    public IdCheckException(string message):base(message)
     {
+
     }
 }

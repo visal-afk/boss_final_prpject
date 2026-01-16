@@ -1,12 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using boss.Persons; 
 
-namespace boss.Service.Abstract
+public interface IAuthService
 {
-    internal interface IAuthService
-    {
-    }
+    
+    void RegisterWorker(Worker worker);
+    void RegisterEmployer(Employer employer);
+
+    Worker LoginWorker(string username, string password);
+    Employer LoginEmployer(string username, string password);
 }

@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace boss.Service
+﻿namespace boss.Service;
+public abstract class BaseService
 {
-    internal class BaseService
+    protected static BossDb _bossDb;
+    public BaseService(BossDb bossDb)
     {
+        _bossDb = bossDb;
     }
 }
