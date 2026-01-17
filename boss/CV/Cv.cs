@@ -2,12 +2,13 @@
 
 public class Cv
 {
+
     public int id { get; set; }
     public string ixtisas { get; set; }
     public string mekteb { get; set; }
     public int unoversitetbal { get; set; }
     public List<string> bacariqlar { get; set; } = new List<string>();
-    public List<string> companies { get; set; }   = new List<string>();
+    public List<string> companies { get; set; } = new List<string>();
     public int isebaslamaqintarixi { get; set; }
     public int isibitmeTarixi { get; set; }
     public List<string> diler { get; set; } = new List<string>();
@@ -15,9 +16,14 @@ public class Cv
     public string gitlink { get; set; }
     public string linkedin { get; set; }
 
-    public Cv(int id,string ixtisas, string mekteb, int unoversitetbal, List<string> bacariqlar, List<string> companies, int isebaslamaqintarixi, int isibitmeTarixi, List<string> diler, bool Fdiplom, string gitlink, string linkedin)
+   
+    public Cv() { }
+
+ 
+    public Cv(string ixtisas, string mekteb, int unoversitetbal, List<string> bacariqlar,
+              List<string> companies, int isebaslamaqintarixi, int isibitmeTarixi,
+              List<string> diler, bool fdiplom, string gitlink, string linkedin)
     {
-        this.id = id;
         this.ixtisas = ixtisas;
         this.mekteb = mekteb;
         this.unoversitetbal = unoversitetbal;
@@ -26,9 +32,8 @@ public class Cv
         this.isebaslamaqintarixi = isebaslamaqintarixi;
         this.isibitmeTarixi = isibitmeTarixi;
         this.diler = diler;
-        this.Fdiplom = Fdiplom;
+        this.Fdiplom = fdiplom;
         this.gitlink = gitlink;
         this.linkedin = linkedin;
     }
-
 }
